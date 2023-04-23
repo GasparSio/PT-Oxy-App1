@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <title>PT-Oxy-App1</title>
+</head>
+<body>
+    <header class="header-container">
+        <div>
+            <img class="header-icon" src="../Icon.png" alt="Imagen flecha">
+            <span class="header-title">unit converter</span>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="converter-container">
+            <div class="main-title">
+                <h1>convert</h1>
+            </div>
+            <div class="div-Converter">
+                <select id="select-units">
+                 <option id="kms-millas" value="kmsMil">kilometros → millas</option>
+                 <option id="millas-kms" value="milKms">millas → kilometros</option>
+                 <option id="pies-mts" value="pieMts">pies → metros</option>
+                 <option id="mts-pies" value="mtsPie">metros → pies</option>
+                 <option id="cms-pulgadas" value="cmsPul">centimetros → pulgadas</option>
+                 <option id="pulgadas-cms" value="pulCms">pulgadas → centimetros</option>
+                </select>
+                <img class="main-icon-arrows" src="../IconConvert.png" alt="Imagen flecha">
+                <input id="input-value" type="number">
+                <span id="unit-to-convert">kms</span>
+            </div>
+            <div class="result-container">
+                <img id="corazon-vaforito" src="../Heart.png" alt="Imagen corazon favorito">
+                <span id="result-number"></span>
+                <span id="result-unit">millas</span>
+            </div>
+        </div>
+        <div class="saved-container">
+            <h2 class="saved-title">saved</h2>
+            <section id="saved-list">
+                
+            </section>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <span class="terms-of-service">
+            <a href="">Terms of Service</a> 
+        </span>
+        <span class="privacy-policy">
+            <a href="">Privacy policy</a> 
+        </span>
+    </footer>
+    <script src="./main.js"></script>    
+</body>
+</html>
